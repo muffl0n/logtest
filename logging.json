@@ -27,6 +27,9 @@
   },
 
   "loggers": {
+    "test": {
+      "level": "INFO"
+    },
     "my_module": {
       "level": "ERROR",
       "handlers": ["console"],

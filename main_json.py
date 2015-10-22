@@ -8,3 +8,6 @@ logging.config.dictConfig(config)
 
 log = logging.getLogger(__name__)
 log.info('test')
+
+log = logging.getLogger('test')
+log.info('test')

@@ -14,5 +14,10 @@ def main():
         logger.extra = {'entry': entry.name}
         logger.info(entry.stat().st_size)
 
+    logger = logging.getLogger('test')
+    logger = logging.LoggerAdapter(logger, {'entry': 'n/a'})
+    logger.warning('testwarning')
+    logger.error('testerror')
+
 if __name__ == '__main__':
     main()
